@@ -1,0 +1,1 @@
+Repository ini bertujuan untuk menyimpan kode pengerjaan tugas akhir saya dalam pengembangan Chatbot-akademik. Chatbot ini dibangun atau dibuat dengan metode Retrieval Augmented Generation (RAG).
