@@ -2,3 +2,5 @@ my-env/
 chroma/
 my_chroma_data/
 .vscode/
+.env
+external-data/
