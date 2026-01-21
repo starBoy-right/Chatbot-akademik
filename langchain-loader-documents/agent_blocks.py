@@ -13,21 +13,10 @@ import torch
 
 
 # model LLM
-from langchain_google_genai import ChatGoogleGenerativeAI
-
-import getpass
-import os
-
-if "GOOGLE_API_KEY" not in os.environ:
-    os.environ["GOOGLE_API_KEY"] = getpass.getpass("Enter your Google AI API key: ")
-
-llm_model = ChatGoogleGenerativeAI(
-    model="gemini-3-flash-preview",
-    temperature=1.0,  # Gemini 3.0+ defaults to 1.0
-    max_tokens=None,
-    timeout=None,
-    max_retries=2,
-    
+llm_model = ChatOllama(
+    model='mistral-openorca:7b-q4_0',
+    temperature=0,
+    streaming=True,
 )
 
 
@@ -65,7 +54,7 @@ embeddings_model = IndoBertEmbeddings()
 
 # vector store -> chromaDB
 vector_store = Chroma(
-    collection_name="metpen-data",
+    collection_name="pdf-data",
     embedding_function=embeddings_model,
     persist_directory="/Users/a/Programming/Langchain-Project/notebooks-langchain-before-project/academic-data"
 )
@@ -76,9 +65,7 @@ def format_docs(docs):
 retriever = vector_store.as_retriever(
     search_type="mmr",
     search_kwargs={
-        "k": 7,            # Ambil 7 dokumen final
-        "fetch_k": 30,     # Cari 30 kandidat dulu, baru filter biar beragam
-        "lambda_mult": 0.7 # 0.7 = fokus kemiripan, 0.3 = fokus keberagaman
+        "k": 3,            
     }
 )
 
