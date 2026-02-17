@@ -2,6 +2,7 @@ import json
 from langchain_core.messages import AIMessage, ToolMessage, SystemMessage
 from langgraph.graph import StateGraph, END
 from langgraph.graph import StateGraph, END
+from langgraph.graph.message import add_messages
 from typing import TypedDict, Annotated
 from langchain_core.messages import AnyMessage, SystemMessage, HumanMessage, ToolMessage
 import operator
@@ -10,7 +11,7 @@ from typing import TypedDict, Annotated, List
 
 
 class AgentState(TypedDict):
-    messages: Annotated[List[AnyMessage], operator.add]
+    messages: Annotated[list, add_messages]
 
 
 class Agent:
