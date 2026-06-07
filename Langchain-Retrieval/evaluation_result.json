@@ -65,6 +65,94 @@
       },
       "avg_tps": 7.31,
       "cold_start_count": 0
+    },
+    {
+      "batch_index": 4,
+      "jumlah_data": 10,
+      "jumlah_gagal": 0,
+      "avg_recall": {
+        "rouge1": 0.4229,
+        "rouge2": 0.1769,
+        "rougeL": 0.3367
+      },
+      "avg_precision": {
+        "rouge1": 0.2407,
+        "rouge2": 0.0843,
+        "rougeL": 0.1802
+      },
+      "avg_f1": {
+        "rouge1": 0.286,
+        "rouge2": 0.1047,
+        "rougeL": 0.2188
+      },
+      "avg_tps": 7.37,
+      "cold_start_count": 0
+    },
+    {
+      "batch_index": 5,
+      "jumlah_data": 10,
+      "jumlah_gagal": 0,
+      "avg_recall": {
+        "rouge1": 0.5336,
+        "rouge2": 0.2525,
+        "rougeL": 0.4728
+      },
+      "avg_precision": {
+        "rouge1": 0.3735,
+        "rouge2": 0.1903,
+        "rougeL": 0.3208
+      },
+      "avg_f1": {
+        "rouge1": 0.3874,
+        "rouge2": 0.1829,
+        "rougeL": 0.3336
+      },
+      "avg_tps": 7.5,
+      "cold_start_count": 0
+    },
+    {
+      "batch_index": 6,
+      "jumlah_data": 10,
+      "jumlah_gagal": 0,
+      "avg_recall": {
+        "rouge1": 0.4949,
+        "rouge2": 0.2678,
+        "rougeL": 0.435
+      },
+      "avg_precision": {
+        "rouge1": 0.3486,
+        "rouge2": 0.1894,
+        "rougeL": 0.2996
+      },
+      "avg_f1": {
+        "rouge1": 0.3879,
+        "rouge2": 0.2102,
+        "rougeL": 0.3384
+      },
+      "avg_tps": 7.28,
+      "cold_start_count": 0
+    },
+    {
+      "batch_index": 7,
+      "jumlah_data": 10,
+      "jumlah_gagal": 0,
+      "avg_recall": {
+        "rouge1": 0.4159,
+        "rouge2": 0.1601,
+        "rougeL": 0.3095
+      },
+      "avg_precision": {
+        "rouge1": 0.3763,
+        "rouge2": 0.1464,
+        "rougeL": 0.2772
+      },
+      "avg_f1": {
+        "rouge1": 0.3845,
+        "rouge2": 0.149,
+        "rougeL": 0.2847
+      },
+      "avg_tps": 7.3,
+      "cold_start_count": 0
     }
   ],
   "all_results": [
@@ -378,7 +466,7 @@
       "timestamp": "2026-06-03T12:47:09.399500",
       "question": "Siapakah nama mahasiswa yang memiliki NIM 112022010 dan berapakah sisa waktu studi normalnya jika ia berada di angkatan 2022?",
       "AiResponse": "YA, Nama mahasiswa yang memiliki NIM 112022010 adalah Nisa Rahmawati dan sisa waktu studi normalnya jika ia berada di angkatan 2022 adalah 3 semester.",
-      "answer": "Mahasiswa dengan NIM 112022010 adalah Nisa Rahmawati. Sebagai angkatan 2022, masa studi maksimalnya (14 semester/7 tahun) akan berakhir pada tahun 2029.",
+      "answer": "0",
       "score": {
         "rouge1": {
           "precision": 0.4545,
@@ -781,16 +869,1376 @@
         "tokens_per_second": 7.21,
         "cold_start": false
       }
+    },
+    {
+      "timestamp": "2026-06-06T12:40:11.898036",
+      "question": "Zara Nugroho tercatat memiliki IPK 2.78 dengan 136 SKS dan statusnya masih Aktif. Apakah IPK tersebut cukup untuk memenuhi syarat kelulusan Sarjana di STT NF?",
+      "AiResponse": "Tidak, IPK Zara Nugroho tidak cukup untuk memenuhi syarat kelulusan Sarjana di STT-NF.",
+      "answer": "Ya, IPK 2.78 milik Zara Nugroho sudah memenuhi syarat minimum IPK untuk kelulusan program Sarjana, yaitu paling rendah 2.00. Namun SKS-nya yang baru 136 belum memenuhi syarat minimum 148 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2424,
+          "recall": 0.5714,
+          "fmeasure": 0.3404
+        },
+        "rouge2": {
+          "precision": 0.0625,
+          "recall": 0.1538,
+          "fmeasure": 0.0889
+        },
+        "rougeL": {
+          "precision": 0.2121,
+          "recall": 0.5,
+          "fmeasure": 0.2979
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 27.574,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 10.819,
+        "eval_duration_s": 16.62,
+        "prompt_token_count": 1320,
+        "output_token_count": 125,
+        "tokens_per_second": 7.52,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:42:07.729239",
+      "question": "Hendra Rahmawati adalah mahasiswa Teknik Informatika angkatan 2021 yang berada di semester 10 dengan status Cuti dan IPK 2.94. Apa risiko akademis yang mengancamnya jika tidak segera menyelesaikan studi?",
+      "AiResponse": "YA, risiko akademis yang mengancamnya adalah mahasiswa Hendra Rahmawati akan tidak dapat lulus dan masa studinya akan melebihi batas waktu yang diizinkan (14 Semester) jika tidak segera menyelesaikan studi.",
+      "answer": "Hendra Rahmawati berisiko terkena Drop Out (DO) karena masa studinya sudah memasuki semester 10 dari batas maksimal 14 semester. Ditambah statusnya sedang Cuti, ia perlu segera aktif kembali dan menyelesaikan seluruh kewajiban akademis sebelum batas 14 semester habis, atau pihak kampus dapat menyatakan ia tidak mampu melanjutkan studi.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2917,
+          "recall": 0.4828,
+          "fmeasure": 0.3636
+        },
+        "rouge2": {
+          "precision": 0.0638,
+          "recall": 0.1071,
+          "fmeasure": 0.08
+        },
+        "rougeL": {
+          "precision": 0.2083,
+          "recall": 0.3448,
+          "fmeasure": 0.2597
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 30.73,
+        "load_duration_s": 0.031,
+        "prompt_eval_duration_s": 10.518,
+        "eval_duration_s": 20.066,
+        "prompt_token_count": 1333,
+        "output_token_count": 149,
+        "tokens_per_second": 7.43,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:43:45.301234",
+      "question": "Sandi Saraswati adalah mahasiswa Teknik Informatika angkatan 2021 yang sudah berada di semester 10. Apakah ia sudah terkena ketentuan SPP Progresif?",
+      "AiResponse": "YA, Sandi Saraswati belum terkena ketentuan SPP Progresif.",
+      "answer": "Ya, Sandi Saraswati sudah terkena ketentuan SPP Progresif karena masa studinya telah melampaui 8 semester atau 4 tahun, yang merupakan batas mulai diberlakukannya skema biaya progresif tersebut.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2593,
+          "recall": 0.875,
+          "fmeasure": 0.4
+        },
+        "rouge2": {
+          "precision": 0.1923,
+          "recall": 0.7143,
+          "fmeasure": 0.303
+        },
+        "rougeL": {
+          "precision": 0.2593,
+          "recall": 0.875,
+          "fmeasure": 0.4
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 28.987,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 10.687,
+        "eval_duration_s": 18.151,
+        "prompt_token_count": 1311,
+        "output_token_count": 136,
+        "tokens_per_second": 7.49,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:45:22.081577",
+      "question": "Vino Anggraini adalah mahasiswa Sistem Informasi angkatan 2021 yang kini di semester 10 dengan 144 SKS dan status Lulus. Apakah kondisinya memerlukan surat teguran dari kampus terkait masa studi?",
+      "AiResponse": "Tidak dapat disimpulkan bahwa Vino Anggraini memerlukan surat teguran dari kampus terkait masa studi, karena data tidak ada tentang syarat-syarat lainnya mengenai pemerluan surat teguran.",
+      "answer": "Tidak. Vino Anggraini tidak memerlukan surat teguran karena ia sudah berstatus Lulus, yang berarti seluruh kewajiban akademisnya telah terpenuhi sebelum melampaui batas masa studi yang ditetapkan.",
+      "score": {
+        "rouge1": {
+          "precision": 0.3846,
+          "recall": 0.3846,
+          "fmeasure": 0.3846
+        },
+        "rouge2": {
+          "precision": 0.16,
+          "recall": 0.16,
+          "fmeasure": 0.16
+        },
+        "rougeL": {
+          "precision": 0.3077,
+          "recall": 0.3077,
+          "fmeasure": 0.3077
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 33.046,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 11.761,
+        "eval_duration_s": 21.137,
+        "prompt_token_count": 1333,
+        "output_token_count": 153,
+        "tokens_per_second": 7.24,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:47:33.316103",
+      "question": "Wahyuni Safitri adalah mahasiswa Bisnis Digital angkatan 2020 dengan IPK 3.80, 144 SKS, dan status Lulus. Berdasarkan pedoman, tahapan apa yang harus dilaluinya sebelum bisa resmi menjadi wisudawan?",
+      "AiResponse": "- Tidak dapat disimpulkan secara pasti bahwa Wahyuni Safitri sudah bisa resmi menjadi wisudawan, karena tidak diketahui apakah mahasiswa telah mendapatkan sertifikat kompetensi dan masa studinya lebih dari 7 tahun / 14 semester.",
+      "answer": "Sebelum menjadi wisudawan, Wahyuni Safitri harus terlebih dahulu dinyatakan lulus melalui Sidang Yudisium yang diselenggarakan oleh Ketua Program Studi. Setelah itu, ia perlu mendaftar secara daring melalui https://alumni.nurulfikri.ac.id/ dan melunasi biaya wisuda melalui bank yang ditunjuk.",
+      "score": {
+        "rouge1": {
+          "precision": 0.15,
+          "recall": 0.1935,
+          "fmeasure": 0.169
+        },
+        "rouge2": {
+          "precision": 0.0513,
+          "recall": 0.0667,
+          "fmeasure": 0.058
+        },
+        "rougeL": {
+          "precision": 0.075,
+          "recall": 0.0968,
+          "fmeasure": 0.0845
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 42.014,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 13.642,
+        "eval_duration_s": 28.176,
+        "prompt_token_count": 1333,
+        "output_token_count": 208,
+        "tokens_per_second": 7.38,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:48:12.134362",
+      "question": "Oktavia Ramadhani adalah mahasiswi Teknik Informatika yang berstatus Lulus dengan 144 SKS dan IPK 3.80. Dokumen pelengkap non-akademik apa yang sebaiknya ia urus setelah lulus untuk menunjang kariernya?",
+      "AiResponse": "Direct Response: \"Selamat bekerja! Setelah lulus, ada beberapa dokumen non-akademik yang sebaiknya diuruskan untuk menunjang karier Anda. Misalnya, CV, Surat Keterangan Lulus, dan Surat Rekomendasi dari Dosen Pembimbing atau Direktur Program Studi. Pastikan juga data diri Anda terdaftar di platform resmi perusahaan yang Anda inginkan.\"",
+      "answer": "Oktavia Ramadhani sebaiknya mengurus Surat Keterangan Pendamping Ijazah (SKPI), yaitu dokumen pelengkap yang memuat capaian non-akademik selama kuliah. SKPI bukan pengganti ijazah, namun berguna untuk menunjang karier dan kelayakan kerja di dunia industri.",
+      "score": {
+        "rouge1": {
+          "precision": 0.3529,
+          "recall": 0.2609,
+          "fmeasure": 0.3
+        },
+        "rouge2": {
+          "precision": 0.1212,
+          "recall": 0.0889,
+          "fmeasure": 0.1026
+        },
+        "rougeL": {
+          "precision": 0.2353,
+          "recall": 0.1739,
+          "fmeasure": 0.2
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 38.768,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 14.234,
+        "eval_duration_s": 24.355,
+        "prompt_token_count": 1334,
+        "output_token_count": 181,
+        "tokens_per_second": 7.43,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:49:49.135616",
+      "question": "Jika Maudy Ayunda, mahasiswi Bisnis Digital angkatan 2022 dengan IPK sempurna 4.00, menyalin karya tulis temannya dan mengklaimnya sebagai tugas miliknya sendiri, pelanggaran apa yang ia lakukan berdasarkan pedoman kampus?",
+      "AiResponse": "YA, Maudy Ayunda melanggar pedoman kampus dengan melakukan plagiat dalam mengambil karya tulis temannya tanpa memberikan kredit yang sesuai kepada penulis aslinya. Selain itu, ia juga tidak melaksanakan tugas secara jujur dan mencontek/menjiplak.",
+      "answer": "Tindakan tersebut dikategorikan sebagai Plagiat, yaitu mengambil atau memakai ide, opini, atau karya tulis orang lain lalu mengakuinya sebagai milik pribadi tanpa memberi kredit atau atribusi kepada penciptanya. Hal ini jelas melanggar integritas akademik yang ditekankan dalam pedoman kampus.",
+      "score": {
+        "rouge1": {
+          "precision": 0.3077,
+          "recall": 0.3529,
+          "fmeasure": 0.3288
+        },
+        "rouge2": {
+          "precision": 0.0526,
+          "recall": 0.0606,
+          "fmeasure": 0.0563
+        },
+        "rougeL": {
+          "precision": 0.1795,
+          "recall": 0.2059,
+          "fmeasure": 0.1918
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 18.294,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 0.909,
+        "eval_duration_s": 17.252,
+        "prompt_token_count": 1345,
+        "output_token_count": 129,
+        "tokens_per_second": 7.48,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:51:18.257532",
+      "question": "Elvina Damayanti adalah mahasiswi Bisnis Digital angkatan 2021 yang berstatus Lulus dan pernah mengikuti magang mandiri di luar mitra Dikti. Dokumen awal apa yang harus ia siapkan untuk proses konversi nilai?",
+      "AiResponse": "Tidak ada data yang tersedia mengenai dokumen awal yang harus disiapkan oleh Elvina Damayanti untuk proses konversi nilai. Mohon periksa kembali atau hubungi Ketua Program Studi atau Bidang Kemahasiswaan.",
+      "answer": "Elvina Damayanti harus menyiapkan Surat Pernyataan Mitra dan Surat Kesanggupan, keduanya dilengkapi tanda tangan basah serta cap basah khusus untuk mitra, kemudian dipindai. Kedua dokumen tersebut digabungkan menjadi satu file sebelum diunggah ke formulir di bit.ly/form-konversi.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1538,
+          "recall": 0.2069,
+          "fmeasure": 0.1765
+        },
+        "rouge2": {
+          "precision": 0.0263,
+          "recall": 0.0357,
+          "fmeasure": 0.0303
+        },
+        "rougeL": {
+          "precision": 0.1026,
+          "recall": 0.1379,
+          "fmeasure": 0.1176
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 32.405,
+        "load_duration_s": 0.038,
+        "prompt_eval_duration_s": 14.327,
+        "eval_duration_s": 17.929,
+        "prompt_token_count": 1326,
+        "output_token_count": 131,
+        "tokens_per_second": 7.31,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:53:46.020404",
+      "question": "Berdasarkan data mahasiswa, siapa saja dari angkatan 2020 yang sudah berstatus Lulus, dan apakah mereka semua sudah memenuhi syarat minimum 148 SKS yang ditetapkan pedoman?",
+      "AiResponse": "Tidak semua mahasiswa angkatan 2020 yang sudah berstatus lulus memenuhi syarat minimum SKS yang ditetapkan (148 SKS).",
+      "answer": "Mahasiswa angkatan 2020 yang berstatus Lulus antara lain Wahyuni Safitri (144 SKS), Irvan Hakim (144 SKS), Tika Yuliana (144 SKS), Surya Lesmana (144 SKS), Vina Panduwinata (144 SKS), Julia Perez (144 SKS), Kaesang Pangarep (144 SKS), Nia Ramadhani (144 SKS), dan Paula Verhoeven (144 SKS). Berdasarkan data yang tercatat, SKS mereka berada di 144, yang perlu dikonfirmasi lebih lanjut apakah sudah memenuhi ketentuan minimum 148 SKS sesuai pedoman prodi masing-masing.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1831,
+          "recall": 0.7647,
+          "fmeasure": 0.2955
+        },
+        "rouge2": {
+          "precision": 0.0714,
+          "recall": 0.3125,
+          "fmeasure": 0.1163
+        },
+        "rougeL": {
+          "precision": 0.1408,
+          "recall": 0.5882,
+          "fmeasure": 0.2273
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 30.401,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 14.626,
+        "eval_duration_s": 15.65,
+        "prompt_token_count": 1316,
+        "output_token_count": 116,
+        "tokens_per_second": 7.41,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T12:54:36.632693",
+      "question": "Mahasiswa mana dari program Bisnis Digital yang sudah Lulus dan memiliki IPK di atas 3.80, dan apakah kelulusan mereka sudah sesuai dengan semua kriteria yang disebutkan dalam pedoman akademik?",
+      "AiResponse": "[\n    {\"name\": \"get_student_academic_record\", \"args\": {\"query\": \"program Bisnis Digital\"}},\n    {\"name\": \"filter_students\", \"args\": {\"query\": \"IPK > 3.80\"}} (Assuming there is a tool called `filter_students` for filtering students based on specific criteria),\n    {\"name\": \"query_from_academic_rule\", \"args\": {\"query\": \"syarat kelulusan Bisnis Digital\"}}\n]",
+      "answer": "Mahasiswa Bisnis Digital yang sudah Lulus dengan IPK di atas 3.80 antara lain Tika Yuliana (IPK 3.85, 144 SKS), Paula Verhoeven (IPK 3.90, 144 SKS), Dina Fitriani (IPK 3.92, 122 SKS), Rani Mulyani (IPK 3.90, 122 SKS), dan beberapa lainnya. Untuk konfirmasi kelulusan penuh sesuai pedoman, perlu dipastikan mereka juga telah memiliki sertifikat kompetensi dan lulus mata kuliah Tugas Akhir, karena data yang tersedia hanya mencakup SKS dan IPK.",
+      "score": {
+        "rouge1": {
+          "precision": 0.0811,
+          "recall": 0.1364,
+          "fmeasure": 0.1017
+        },
+        "rouge2": {
+          "precision": 0.0411,
+          "recall": 0.0698,
+          "fmeasure": 0.0517
+        },
+        "rougeL": {
+          "precision": 0.0811,
+          "recall": 0.1364,
+          "fmeasure": 0.1017
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 50.558,
+        "load_duration_s": 0.035,
+        "prompt_eval_duration_s": 14.857,
+        "eval_duration_s": 35.503,
+        "prompt_token_count": 1319,
+        "output_token_count": 247,
+        "tokens_per_second": 6.96,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:12:34.447095",
+      "question": "Siapa nama mahasiswa dengan NIM 112022090, di program studi apa ia kuliah, dan berapa IPK-nya saat ini?",
+      "AiResponse": "Ya, nama mahasiswa dengan NIM 112022090 adalah Agus Pratama M.Kom, di program studi Bisnis Digital, dan berapa IPK-nya saat ini adalah 4.0.",
+      "answer": "Mahasiswa dengan NIM 112022090 adalah Maudy Ayunda, terdaftar di program studi Bisnis Digital angkatan 2022, dengan IPK sempurna 4.00.",
+      "score": {
+        "rouge1": {
+          "precision": 0.6,
+          "recall": 0.48,
+          "fmeasure": 0.5333
+        },
+        "rouge2": {
+          "precision": 0.4211,
+          "recall": 0.3333,
+          "fmeasure": 0.3721
+        },
+        "rougeL": {
+          "precision": 0.6,
+          "recall": 0.48,
+          "fmeasure": 0.5333
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 15.482,
+        "load_duration_s": 0.073,
+        "prompt_eval_duration_s": 3.552,
+        "eval_duration_s": 11.78,
+        "prompt_token_count": 1299,
+        "output_token_count": 89,
+        "tokens_per_second": 7.56,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:13:34.438858",
+      "question": "Berapakah total SKS yang sudah ditempuh oleh Bella Safitri dengan NIM 112022128, dan di semester berapa ia sekarang?",
+      "AiResponse": "- Total SKS yang sudah ditempuh oleh Bella Safitri adalah 142, dan semester yang sedang dia ambil tidak diberitahukan dalam data ini.",
+      "answer": "Bella Safitri dengan NIM 112022128 saat ini berada di semester 8 dan sudah menempuh 142 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.5,
+          "recall": 0.381,
+          "fmeasure": 0.4324
+        },
+        "rouge2": {
+          "precision": 0.0667,
+          "recall": 0.05,
+          "fmeasure": 0.0571
+        },
+        "rougeL": {
+          "precision": 0.1875,
+          "recall": 0.1429,
+          "fmeasure": 0.1622
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 21.975,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 10.054,
+        "eval_duration_s": 11.81,
+        "prompt_token_count": 1301,
+        "output_token_count": 90,
+        "tokens_per_second": 7.62,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:14:39.571070",
+      "question": "Siapa dosen pembimbing akademik dari mahasiswa bernama Tuti Handayani yang merupakan mahasiswi Teknik Informatika angkatan 2023?",
+      "AiResponse": "YA, dosen pembimbing akademik dari mahasiswa Tuti Handayani yang merupakan mahasiswi Teknik Informatika angkatan 2023 adalah Dr. Wahyu Hidayat M.Kom.",
+      "answer": "Dosen Pembimbing Akademik Tuti Handayani adalah Dr. Wahyu Hidayat M.Kom.",
+      "score": {
+        "rouge1": {
+          "precision": 1.0,
+          "recall": 0.5238,
+          "fmeasure": 0.6875
+        },
+        "rouge2": {
+          "precision": 0.8,
+          "recall": 0.4,
+          "fmeasure": 0.5333
+        },
+        "rougeL": {
+          "precision": 1.0,
+          "recall": 0.5238,
+          "fmeasure": 0.6875
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 19.643,
+        "load_duration_s": 0.032,
+        "prompt_eval_duration_s": 10.074,
+        "eval_duration_s": 9.475,
+        "prompt_token_count": 1300,
+        "output_token_count": 72,
+        "tokens_per_second": 7.6,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:15:43.701806",
+      "question": "Joko Fitriani adalah mahasiswa Teknik Informatika angkatan 2022 dengan IPK 2.88 dan 141 SKS di semester 8. Berdasarkan pedoman kelulusan, apakah IPK-nya memenuhi syarat minimum?",
+      "AiResponse": "YA, IPK-nya memenuhi syarat minimum.",
+      "answer": "Ya, IPK 2.88 milik Joko Fitriani sudah memenuhi syarat minimum kelulusan program Sarjana yaitu IPK paling rendah 2.00. Namun SKS-nya yang baru 141 belum memenuhi syarat minimum 148 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1875,
+          "recall": 1.0,
+          "fmeasure": 0.3158
+        },
+        "rouge2": {
+          "precision": 0.0968,
+          "recall": 0.6,
+          "fmeasure": 0.1667
+        },
+        "rougeL": {
+          "precision": 0.1875,
+          "recall": 1.0,
+          "fmeasure": 0.3158
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 21.958,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 10.501,
+        "eval_duration_s": 11.355,
+        "prompt_token_count": 1327,
+        "output_token_count": 86,
+        "tokens_per_second": 7.57,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:16:51.514174",
+      "question": "Amalia Dewanata adalah mahasiswi Bisnis Digital angkatan 2024 dengan IPK 2.84 dan status Aktif. Apakah IPK tersebut memenuhi syarat minimum kelulusan Sarjana di STT NF?",
+      "AiResponse": "YA, IPK Amalia Dewanata memenuhi syarat minimum kelulusan Sarjana di STT NF.",
+      "answer": "Ya, IPK 2.84 milik Amalia Dewanata sudah memenuhi syarat minimum IPK kelulusan program Sarjana, yaitu paling rendah 2.00. Meski demikian, ia masih di semester awal sehingga masih banyak kewajiban lain yang harus dipenuhi sebelum bisa dinyatakan lulus.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2564,
+          "recall": 0.8333,
+          "fmeasure": 0.3922
+        },
+        "rouge2": {
+          "precision": 0.1053,
+          "recall": 0.3636,
+          "fmeasure": 0.1633
+        },
+        "rougeL": {
+          "precision": 0.2564,
+          "recall": 0.8333,
+          "fmeasure": 0.3922
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 23.872,
+        "load_duration_s": 0.063,
+        "prompt_eval_duration_s": 10.774,
+        "eval_duration_s": 12.954,
+        "prompt_token_count": 1318,
+        "output_token_count": 97,
+        "tokens_per_second": 7.49,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:18:34.748615",
+      "question": "Dian Sari adalah mahasiswi Sistem Informasi angkatan 2022 semester 8 yang sudah berstatus Lulus dengan 144 SKS dan IPK 2.97. Apakah kelulusannya sudah sah meskipun IPK-nya rendah?",
+      "AiResponse": "Tidak dapat menentukan apakah kelulusannya sudah sah meskipun IPK-nya rendah, karena data tersebut tidak tersedia dalam data yang diberikan.",
+      "answer": "Ya, kelulusan Dian Sari sah secara akademis karena IPK 2.97 sudah berada di atas batas minimum 2.00 yang ditetapkan pedoman. Statusnya yang tercatat Lulus menandakan seluruh persyaratan lainnya juga telah terpenuhi.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1515,
+          "recall": 0.25,
+          "fmeasure": 0.1887
+        },
+        "rouge2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rougeL": {
+          "precision": 0.0909,
+          "recall": 0.15,
+          "fmeasure": 0.1132
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 29.32,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 11.096,
+        "eval_duration_s": 18.091,
+        "prompt_token_count": 1329,
+        "output_token_count": 135,
+        "tokens_per_second": 7.46,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:19:58.482230",
+      "question": "Muhammad Sanjaya adalah mahasiswa Teknik Informatika angkatan 2023 yang kini berstatus Cuti di semester 6. Berdasarkan pedoman, apakah masa cutinya ikut dihitung dalam batas masa studi 14 semester?",
+      "AiResponse": "YA, masa cuti Muhammad Sanjaya akan ikut dihitung dalam batas masa studi 14 semester.",
+      "answer": "Ya, berdasarkan ketentuan kampus, masa cuti Muhammad Sanjaya tetap dihitung dalam perhitungan masa studi maksimal 14 semester. Cuti tidak menghentikan jalannya hitungan batas 7 tahun tersebut.",
+      "score": {
+        "rouge1": {
+          "precision": 0.4615,
+          "recall": 0.8571,
+          "fmeasure": 0.6
+        },
+        "rouge2": {
+          "precision": 0.24,
+          "recall": 0.4615,
+          "fmeasure": 0.3158
+        },
+        "rougeL": {
+          "precision": 0.4231,
+          "recall": 0.7857,
+          "fmeasure": 0.55
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 25.43,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 11.339,
+        "eval_duration_s": 13.974,
+        "prompt_token_count": 1325,
+        "output_token_count": 104,
+        "tokens_per_second": 7.44,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:21:57.868436",
+      "question": "Krisna Mahendra adalah mahasiswa Teknik Informatika angkatan 2023 semester 6 yang berstatus Cuti dengan IPK 3.25 dan hanya 95 SKS. Apa yang harus ia prioritaskan setelah aktif kembali?",
+      "AiResponse": "YA, setelah aktif kembali, Krisna Mahendra harus melakukan pembayaran biaya kuliah sebelum UAS dengan cara transfer dan menyelesaikan beban studinya sebelum batas masa studi yang telah ditetapkan.",
+      "answer": "Setelah aktif kembali, Krisna Mahendra harus memprioritaskan penambahan SKS secara signifikan karena dengan 95 SKS di semester 6, ia masih jauh dari batas minimum 148 SKS untuk lulus. Ia juga perlu menjaga IPK di atas 2.00 dan memastikan masa studinya tidak melampaui batas 14 semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2391,
+          "recall": 0.4074,
+          "fmeasure": 0.3014
+        },
+        "rouge2": {
+          "precision": 0.1111,
+          "recall": 0.1923,
+          "fmeasure": 0.1408
+        },
+        "rougeL": {
+          "precision": 0.2174,
+          "recall": 0.3704,
+          "fmeasure": 0.274
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 31.597,
+        "load_duration_s": 0.036,
+        "prompt_eval_duration_s": 13.837,
+        "eval_duration_s": 17.614,
+        "prompt_token_count": 1327,
+        "output_token_count": 132,
+        "tokens_per_second": 7.49,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:23:46.758555",
+      "question": "Coki Pratama adalah mahasiswa Teknik Informatika angkatan 2024 semester 4 yang berstatus Cuti dengan IPK 3.20 dan hanya 60 SKS. Berdasarkan pedoman SPP Progresif, apakah ia sudah terkena ketentuan tersebut?",
+      "AiResponse": "YA, Mahasiswa Coki Pratama terkena ketentuan pembayaran biaya cuti kuliah sesuai dengan Biaya Semester atau Biaya Operasional Pendidikan (BOP) masing-masing angkatan.",
+      "answer": "Belum. Coki Pratama yang baru berada di semester 4 belum terkena SPP Progresif. Ketentuan tersebut baru diberlakukan bagi mahasiswa yang masa kuliahnya melampaui 4 tahun atau lebih dari 8 semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2333,
+          "recall": 0.3182,
+          "fmeasure": 0.2692
+        },
+        "rouge2": {
+          "precision": 0.0345,
+          "recall": 0.0476,
+          "fmeasure": 0.04
+        },
+        "rougeL": {
+          "precision": 0.1667,
+          "recall": 0.2273,
+          "fmeasure": 0.1923
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 35.969,
+        "load_duration_s": 0.039,
+        "prompt_eval_duration_s": 14.264,
+        "eval_duration_s": 21.54,
+        "prompt_token_count": 1335,
+        "output_token_count": 160,
+        "tokens_per_second": 7.43,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:25:17.482824",
+      "question": "Uswatun Hasanah adalah mahasiswi Teknik Informatika angkatan 2022 di semester 8 dengan IPK 3.95, 144 SKS, dan berstatus Lulus. Tahapan administratif apa yang harus ia selesaikan untuk bisa menghadiri wisuda?",
+      "AiResponse": "Ya, Uswatun Hasanah telah memenuhi semua tahapan administratif yang diperlukan untuk bisa menghadiri wisuda.",
+      "answer": "Uswatun Hasanah harus terlebih dahulu dinyatakan lulus melalui Sidang Yudisium oleh Ketua Program Studi. Setelah itu, ia perlu mendaftarkan diri secara daring melalui https://alumni.nurulfikri.ac.id/ dan melunasi biaya wisuda melalui bank resmi yang ditunjuk kampus.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1053,
+          "recall": 0.2857,
+          "fmeasure": 0.1538
+        },
+        "rouge2": {
+          "precision": 0.027,
+          "recall": 0.0769,
+          "fmeasure": 0.04
+        },
+        "rougeL": {
+          "precision": 0.0789,
+          "recall": 0.2143,
+          "fmeasure": 0.1154
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 30.784,
+        "load_duration_s": 0.035,
+        "prompt_eval_duration_s": 14.361,
+        "eval_duration_s": 16.29,
+        "prompt_token_count": 1336,
+        "output_token_count": 120,
+        "tokens_per_second": 7.37,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:32:45.198486",
+      "question": "Nadia Shafira adalah mahasiswi Teknik Informatika angkatan 2022 semester 8 dengan IPK 3.85 dan 142 SKS berstatus Aktif. Berapa SKS lagi yang ia butuhkan agar memenuhi syarat minimum kelulusan?",
+      "AiResponse": "Tidak, Mahasiswi Nadia Shafira belum memenuhi syarat minimum kelulusan karena belum mencapai minimal SKS yang diperlukan (142 < 148).",
+      "answer": "Nadia Shafira masih membutuhkan setidaknya 6 SKS lagi untuk memenuhi syarat minimum kelulusan, karena ia baru menempuh 142 SKS sedangkan batas minimum yang diwajibkan adalah 148 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.4074,
+          "recall": 0.6111,
+          "fmeasure": 0.4889
+        },
+        "rouge2": {
+          "precision": 0.1923,
+          "recall": 0.2941,
+          "fmeasure": 0.2326
+        },
+        "rougeL": {
+          "precision": 0.3704,
+          "recall": 0.5556,
+          "fmeasure": 0.4444
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 31.93,
+        "load_duration_s": 0.024,
+        "prompt_eval_duration_s": 12.397,
+        "eval_duration_s": 19.392,
+        "prompt_token_count": 1331,
+        "output_token_count": 147,
+        "tokens_per_second": 7.58,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:34:23.594167",
+      "question": "Taufik Rahman adalah mahasiswa Bisnis Digital angkatan 2022 semester 8 dengan IPK 3.80 dan 142 SKS berstatus Aktif. Selain menambah SKS, syarat kelulusan apa lagi yang perlu ia penuhi berdasarkan pedoman?",
+      "AiResponse": "- Untuk dapat lulus, selain memenuhi syarat IPK dan masa studi, mahasiswa Taufik Rahman juga perlu memiliki sertifikat kompetensi.",
+      "answer": "Selain menambah SKS hingga minimal 148, Taufik Rahman juga harus memastikan ia lulus mata kuliah Tugas Akhir (skripsi) dan memiliki sertifikat kompetensi, serta menyelesaikan studi sebelum melampaui batas 14 semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.3333,
+          "recall": 0.5556,
+          "fmeasure": 0.4167
+        },
+        "rouge2": {
+          "precision": 0.1379,
+          "recall": 0.2353,
+          "fmeasure": 0.1739
+        },
+        "rougeL": {
+          "precision": 0.2333,
+          "recall": 0.3889,
+          "fmeasure": 0.2917
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 25.694,
+        "load_duration_s": 0.039,
+        "prompt_eval_duration_s": 10.402,
+        "eval_duration_s": 15.159,
+        "prompt_token_count": 1336,
+        "output_token_count": 114,
+        "tokens_per_second": 7.52,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:36:02.889341",
+      "question": "Bandingkan kondisi akademis Aisyah Nabila (NIM 112021102, semester 10, 140 SKS, IPK 3.65) dengan Aditya Pratama (NIM 112021101, semester 10, 138 SKS, IPK 3.45). Siapa yang lebih dekat memenuhi syarat kelulusan dari sisi SKS?",
+      "AiResponse": " Aisyah Nabila memiliki lebih tinggi jumlah SKS yang diambil (140 SKS) daripada Aditya Pratama (138 SKS). Namun, untuk menentukan siapa yang lebih dekat memenuhi syarat kelulusan dari sisi SKS, perlu dipertimbangkan juga jumlah mata kuliah yang harus diselesaikan sesuai dengan program studi. Jika tidak ada informasi lebih lanjut tentang itu, kami tidak dapat menentukan siapa yang lebih dekat memenuhi syarat kelulusan dari sisi SKS.",
+      "answer": "Aisyah Nabila lebih dekat memenuhi syarat kelulusan dari sisi SKS. Ia sudah menempuh 140 SKS, hanya kurang 8 SKS dari batas minimum 148 SKS, sedangkan Aditya Pratama baru menempuh 138 SKS sehingga masih kurang 10 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.5278,
+          "recall": 0.2969,
+          "fmeasure": 0.38
+        },
+        "rouge2": {
+          "precision": 0.3143,
+          "recall": 0.1746,
+          "fmeasure": 0.2245
+        },
+        "rougeL": {
+          "precision": 0.3333,
+          "recall": 0.1875,
+          "fmeasure": 0.24
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 36.824,
+        "load_duration_s": 0.038,
+        "prompt_eval_duration_s": 11.073,
+        "eval_duration_s": 25.567,
+        "prompt_token_count": 1370,
+        "output_token_count": 191,
+        "tokens_per_second": 7.47,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:37:56.911223",
+      "question": "Di antara mahasiswa Bisnis Digital angkatan 2021 semester 10 yang masih Aktif, siapa yang memiliki SKS paling banyak dan sudah seberapa dekat dengan syarat kelulusan minimum 148 SKS?",
+      "AiResponse": "- Tidak, Rizky Zaelani masih jauh dari syarat kelulusan minimum 148 SKS yang diperlukan.",
+      "answer": "Di antara mahasiswa Bisnis Digital angkatan 2021 semester 10 yang masih Aktif, Qonita Sari memiliki SKS terbanyak yaitu 136 SKS, namun masih kurang 12 SKS dari syarat minimum 148 SKS. Disusul Bagus Setiawan dengan 135 SKS dan Tegar Saputra dengan 135 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1667,
+          "recall": 0.5385,
+          "fmeasure": 0.2545
+        },
+        "rouge2": {
+          "precision": 0.0732,
+          "recall": 0.25,
+          "fmeasure": 0.1132
+        },
+        "rougeL": {
+          "precision": 0.1429,
+          "recall": 0.4615,
+          "fmeasure": 0.2182
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 31.22,
+        "load_duration_s": 0.035,
+        "prompt_eval_duration_s": 11.578,
+        "eval_duration_s": 19.501,
+        "prompt_token_count": 1321,
+        "output_token_count": 144,
+        "tokens_per_second": 7.38,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:39:25.842091",
+      "question": "Gita Saraswati adalah mahasiswi Sistem Informasi angkatan 2021 semester 10 yang dibimbing oleh Rina Wati M.T. Berapa kali minimal ia wajib bertemu dosen PA-nya dalam satu semester berdasarkan pedoman?",
+      "AiResponse": "Maaf, data tidak ditemukan mengenai banyak kali minimal bertemu dosen PA dalam satu semester. Mohon periksa kembali atau hubungi Dosen Pembina Anda untuk informasi lebih lanjut.",
+      "answer": "Berdasarkan pedoman kampus, Gita Saraswati wajib melakukan bimbingan dengan Dosen Pembimbing Akademik Rina Wati M.T. sekurang-kurangnya 3 kali dalam setiap semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.1739,
+          "recall": 0.1538,
+          "fmeasure": 0.1633
+        },
+        "rouge2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rougeL": {
+          "precision": 0.1304,
+          "recall": 0.1154,
+          "fmeasure": 0.1224
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 34.903,
+        "load_duration_s": 0.035,
+        "prompt_eval_duration_s": 13.615,
+        "eval_duration_s": 21.141,
+        "prompt_token_count": 1332,
+        "output_token_count": 156,
+        "tokens_per_second": 7.38,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:41:14.682895",
+      "question": "Berdasarkan pedoman evaluasi studi, pada momen apa saja mahasiswa seperti Fadli Nugroho yang berada di semester 10 angkatan 2021 akan dievaluasi secara khusus oleh kampus?",
+      "AiResponse": "YA, mahasiswa Fadli Nugroho akan dievaluasi secara khusus oleh kampus karena masa studinya sudah melebihi batas yang diperbolehkan.",
+      "answer": "Fadli Nugroho yang berada di semester 10 akan dievaluasi secara khusus pada akhir semester 8 (yang sudah dilaluinya), di bagian akhir program studi, serta pada masa menjelang habisnya batas waktu maksimal 14 semester. Selain itu, evaluasi rutin juga dilakukan di setiap akhir semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2326,
+          "recall": 0.5556,
+          "fmeasure": 0.3279
+        },
+        "rouge2": {
+          "precision": 0.0952,
+          "recall": 0.2353,
+          "fmeasure": 0.1356
+        },
+        "rougeL": {
+          "precision": 0.186,
+          "recall": 0.4444,
+          "fmeasure": 0.2623
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 32.634,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 13.939,
+        "eval_duration_s": 18.554,
+        "prompt_token_count": 1320,
+        "output_token_count": 139,
+        "tokens_per_second": 7.49,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:43:03.107807",
+      "question": "Diana Larasati adalah mahasiswi Bisnis Digital angkatan 2022 semester 8 yang berstatus Lulus. Dokumen keuangan apa yang wajib ia miliki sebagai prasyarat mendaftar sidang skripsi dan kelulusan?",
+      "AiResponse": "YA, Diana Larasati harus memiliki Surat Keterangan Lunas Biaya Pendidikan sebagai prasyarat mendaftar sidang skripsi dan kelulusan.",
+      "answer": "Diana Larasati wajib memiliki Surat Keterangan Lunas Biaya Pendidikan sebagai prasyarat wajib untuk mendaftar sidang skripsi/tugas akhir serta keperluan administrasi kelulusan lainnya.",
+      "score": {
+        "rouge1": {
+          "precision": 0.6087,
+          "recall": 0.8235,
+          "fmeasure": 0.7
+        },
+        "rouge2": {
+          "precision": 0.4545,
+          "recall": 0.625,
+          "fmeasure": 0.5263
+        },
+        "rougeL": {
+          "precision": 0.6087,
+          "recall": 0.8235,
+          "fmeasure": 0.7
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 35.724,
+        "load_duration_s": 0.026,
+        "prompt_eval_duration_s": 13.438,
+        "eval_duration_s": 22.144,
+        "prompt_token_count": 1324,
+        "output_token_count": 165,
+        "tokens_per_second": 7.45,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:45:16.186979",
+      "question": "Candra Wibowo adalah mahasiswa Sistem Informasi angkatan 2022 semester 8 yang berstatus Cuti. Berapa biaya yang harus ia bayarkan selama masa cutinya dan bagaimana mekanisme pembayarannya?",
+      "AiResponse": "Ya, Candra Wibowo harus melunasi biaya kuliah selama masa cutinya sebesar 130 rupiah. Mekanisme pembayaran adalah melalui transfer virtual account CIMB Niaga Syariah STT Nurul Fikri.",
+      "answer": "Biaya cuti Candra Wibowo ditetapkan mengikuti tarif Biaya Semester atau BOP sesuai angkatannya. Pembayaran wajib dilakukan melalui transfer Virtual Account CIMB Niaga Syariah setelah mengisi formulir cuti dan sebelum periode cuti dimulai.",
+      "score": {
+        "rouge1": {
+          "precision": 0.3438,
+          "recall": 0.4231,
+          "fmeasure": 0.3793
+        },
+        "rouge2": {
+          "precision": 0.2258,
+          "recall": 0.28,
+          "fmeasure": 0.25
+        },
+        "rougeL": {
+          "precision": 0.3438,
+          "recall": 0.4231,
+          "fmeasure": 0.3793
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 36.541,
+        "load_duration_s": 0.037,
+        "prompt_eval_duration_s": 14.833,
+        "eval_duration_s": 21.573,
+        "prompt_token_count": 1321,
+        "output_token_count": 134,
+        "tokens_per_second": 6.21,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:47:06.744823",
+      "question": "Rizky Hidayat (NIM 112021233) adalah mahasiswa Bisnis Digital angkatan 2022 semester 8 yang berstatus Lulus dengan IPK 2.90 dan 144 SKS. Mengingat IPK-nya yang rendah, apakah ia tetap sah dinyatakan lulus berdasarkan pedoman kampus?",
+      "AiResponse": "Tidak, Rizky Hidayat tidak sah dinyatakan lulus berdasarkan pedoman kampus karena IPK-nya rendah (< 2.00).",
+      "answer": "Ya, Rizky Hidayat tetap sah dinyatakan lulus karena IPK 2.90 sudah memenuhi batas minimum kelulusan yaitu 2.00. Statusnya yang tercatat Lulus dalam sistem menunjukkan seluruh persyaratan akademis lainnya, termasuk penyelesaian Tugas Akhir dan kepemilikan sertifikat kompetensi, telah terpenuhi.",
+      "score": {
+        "rouge1": {
+          "precision": 0.225,
+          "recall": 0.5625,
+          "fmeasure": 0.3214
+        },
+        "rouge2": {
+          "precision": 0.1282,
+          "recall": 0.3333,
+          "fmeasure": 0.1852
+        },
+        "rougeL": {
+          "precision": 0.225,
+          "recall": 0.5625,
+          "fmeasure": 0.3214
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 34.851,
+        "load_duration_s": 0.046,
+        "prompt_eval_duration_s": 13.826,
+        "eval_duration_s": 20.857,
+        "prompt_token_count": 1358,
+        "output_token_count": 155,
+        "tokens_per_second": 7.43,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:49:42.071527",
+      "question": "Intan Anggraini adalah mahasiswi Sistem Informasi angkatan 2022 semester 8 dengan IPK 2.99 dan 141 SKS berstatus Aktif. Berdasarkan pedoman, apa saja yang masih harus ia penuhi dan risiko apa yang mengancam jika tidak segera diselesaikan?",
+      "AiResponse": "Ya, Intan Anggraini masih harus menyelesaikan mata kuliah minimal 7 SKS lagi untuk memenuhi persyaratan SKS yang diperlukan. Selain itu, belum memenuhi persyaratan Tugas Akhir dan sertifikat kompetensi. Jika tidak segera diselesaikan, risiko yang mengancam adalah Intan Anggraini tidak akan dapat lulus dari Program Sarjana STT Terpadu Nurul Fikri.",
+      "answer": "Intan Anggraini masih harus menambah minimal 7 SKS untuk mencapai 148 SKS, menyelesaikan Tugas Akhir, dan memiliki sertifikat kompetensi. Risiko yang mengancam adalah potensi kena SPP Progresif jika melewati semester 8, dan ancaman DO jika tidak mampu menyelesaikan semua kewajiban sebelum batas 14 semester habis.",
+      "score": {
+        "rouge1": {
+          "precision": 0.4667,
+          "recall": 0.4286,
+          "fmeasure": 0.4468
+        },
+        "rouge2": {
+          "precision": 0.2727,
+          "recall": 0.25,
+          "fmeasure": 0.2609
+        },
+        "rougeL": {
+          "precision": 0.4222,
+          "recall": 0.3878,
+          "fmeasure": 0.4043
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 39.132,
+        "load_duration_s": 0.022,
+        "prompt_eval_duration_s": 18.552,
+        "eval_duration_s": 20.46,
+        "prompt_token_count": 1349,
+        "output_token_count": 142,
+        "tokens_per_second": 6.94,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:56:15.764924",
+      "question": "Siapa mahasiswa dengan NIM 112021299, di program studi apa ia terdaftar, dan apa yang menarik dari data akademisnya?",
+      "AiResponse": "YA, Mahasiswa Ihsan Yasmin dengan NIM 112021299 terdaftar di program studi Bisnis Digital dan data akademiknya yang menarik adalah IPK-nya yang tinggi, yaitu 4.00.",
+      "answer": "Mahasiswa dengan NIM 112021299 adalah Ihsan Yasmin, terdaftar di program studi Bisnis Digital angkatan 2024 semester 4. Yang menarik, ia memiliki IPK sempurna 4.00 namun berstatus Cuti dengan hanya 65 SKS.",
+      "score": {
+        "rouge1": {
+          "precision": 0.5625,
+          "recall": 0.6923,
+          "fmeasure": 0.6207
+        },
+        "rouge2": {
+          "precision": 0.3226,
+          "recall": 0.4,
+          "fmeasure": 0.3571
+        },
+        "rougeL": {
+          "precision": 0.4688,
+          "recall": 0.5769,
+          "fmeasure": 0.5172
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 30.177,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 12.059,
+        "eval_duration_s": 17.978,
+        "prompt_token_count": 1302,
+        "output_token_count": 135,
+        "tokens_per_second": 7.51,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:57:39.555245",
+      "question": "Siapa dosen pembimbing Zara Nugroho dengan NIM 112021245, dan berapa IPK serta SKS yang sudah ia tempuh?",
+      "AiResponse": "Ya, dosen pembimbing Zara Nugroho dengan NIM 112021245 adalah Dr. Wahyu Hidayat M.Kom. Namun, belum diketahui karena belum lulus. IPK-nya saat ini adalah 3.74 dan SKS yang sudah dia tempuh adalah 136.",
+      "answer": "Dosen pembimbing Zara Nugroho adalah Dr. Wahyu Hidayat M.Kom. Ia memiliki IPK 2.78 dengan 136 SKS dan berstatus Aktif di semester 8.",
+      "score": {
+        "rouge1": {
+          "precision": 0.625,
+          "recall": 0.4286,
+          "fmeasure": 0.5085
+        },
+        "rouge2": {
+          "precision": 0.3478,
+          "recall": 0.2353,
+          "fmeasure": 0.2807
+        },
+        "rougeL": {
+          "precision": 0.5,
+          "recall": 0.3429,
+          "fmeasure": 0.4068
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 22.515,
+        "load_duration_s": 0.032,
+        "prompt_eval_duration_s": 10.318,
+        "eval_duration_s": 12.1,
+        "prompt_token_count": 1299,
+        "output_token_count": 88,
+        "tokens_per_second": 7.27,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T13:59:14.692877",
+      "question": "Sandi Wahyuni adalah mahasiswa Teknik Informatika angkatan 2021 semester 10 yang berstatus Cuti dengan IPK 2.82 dan 135 SKS. Berdasarkan pedoman, apakah IPK-nya memenuhi syarat minimum dan apa ancaman terbesar yang ia hadapi?",
+      "AiResponse": "Tidak, IPK Sandi Wahyuni tidak memenuhi syarat minimum untuk lulus. Ancaman terbesar yang ia hadapi adalah mungkinnya tidak dapat lulus karena IPK yang rendah.",
+      "answer": "IPK 2.82 milik Sandi Wahyuni sudah memenuhi syarat minimum kelulusan 2.00. Namun ancaman terbesarnya adalah masa studinya yang sudah di semester 10 dengan status Cuti, sehingga jika tidak segera aktif dan menyelesaikan kewajiban akademis, ia berisiko terkena Drop Out saat mendekati batas 14 semester.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2391,
+          "recall": 0.4583,
+          "fmeasure": 0.3143
+        },
+        "rouge2": {
+          "precision": 0.0667,
+          "recall": 0.1304,
+          "fmeasure": 0.0882
+        },
+        "rougeL": {
+          "precision": 0.1957,
+          "recall": 0.375,
+          "fmeasure": 0.2571
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 27.652,
+        "load_duration_s": 0.032,
+        "prompt_eval_duration_s": 11.049,
+        "eval_duration_s": 16.48,
+        "prompt_token_count": 1344,
+        "output_token_count": 113,
+        "tokens_per_second": 6.86,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:01:30.440342",
+      "question": "Hana Kurniawan adalah mahasiswi Sistem Informasi angkatan 2021 semester 10 yang berstatus Cuti dengan IPK 2.82 dan 132 SKS. Berapa SKS minimum yang masih harus ia kejar dan apa konsekuensi jika gagal menyelesaikannya sebelum semester 14?",
+      "AiResponse": "- Jika Hana Kurniawan gagal menyelesaikannya sebelum semester 14, maka dia tidak akan diterima untuk melanjutkan studi pada semester berikutnya hingga statusnya diubah menjadi Aktif. Jumlah SKS minimum yang masih harus ia kejar tidak dapat ditentukan karena dia sedang dalam status Cuti dan tidak akan diterima untuk melanjutkan studi pada semester berikutnya.",
+      "answer": "Hana Kurniawan masih harus menambah minimal 16 SKS untuk mencapai syarat minimum 148 SKS. Jika gagal menyelesaikan seluruh kewajiban akademis sebelum batas 14 semester, ia akan dinyatakan tidak mampu melanjutkan studi dan berstatus Drop Out (DO).",
+      "score": {
+        "rouge1": {
+          "precision": 0.5,
+          "recall": 0.3529,
+          "fmeasure": 0.4138
+        },
+        "rouge2": {
+          "precision": 0.0857,
+          "recall": 0.06,
+          "fmeasure": 0.0706
+        },
+        "rougeL": {
+          "precision": 0.2778,
+          "recall": 0.1961,
+          "fmeasure": 0.2299
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 32.116,
+        "load_duration_s": 0.031,
+        "prompt_eval_duration_s": 11.622,
+        "eval_duration_s": 20.35,
+        "prompt_token_count": 1350,
+        "output_token_count": 149,
+        "tokens_per_second": 7.32,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:04:23.081809",
+      "question": "Laras Putri adalah mahasiswi Teknik Informatika angkatan 2022 semester 8 yang berstatus Cuti dengan IPK 2.86 dan 131 SKS. Apakah ia sudah dikenakan SPP Progresif dan apa yang perlu ia lakukan terkait biaya kuliahnya selama cuti?",
+      "AiResponse": "YA, Laras Putri sudah melakukan pembayaran biaya kuliah dengan cara transfer dan tidak dikenakan SPP Progresif selama cuti. Namun, untuk mengurus biaya kuliahnya selama cuti, Laras Putri harus berkonsultasi terlebih dahulu dengan dosen pembimbing akademik dan melakukan penundaan pembayaran sesuai dengan ketentuan yang telah disebutkan.",
+      "answer": "Laras Putri belum dikenakan SPP Progresif karena berada tepat di semester 8, sedangkan ketentuan tersebut berlaku bagi yang melampaui 8 semester. Selama masa cuti, ia tetap wajib membayar biaya cuti sesuai tarif BOP angkatannya melalui Virtual Account CIMB Niaga Syariah sebelum periode cuti dimulai.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2727,
+          "recall": 0.2667,
+          "fmeasure": 0.2697
+        },
+        "rouge2": {
+          "precision": 0.0698,
+          "recall": 0.0682,
+          "fmeasure": 0.069
+        },
+        "rougeL": {
+          "precision": 0.2273,
+          "recall": 0.2222,
+          "fmeasure": 0.2247
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 38.409,
+        "load_duration_s": 0.031,
+        "prompt_eval_duration_s": 13.621,
+        "eval_duration_s": 24.637,
+        "prompt_token_count": 1348,
+        "output_token_count": 179,
+        "tokens_per_second": 7.27,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:06:04.199380",
+      "question": "Bandingkan kondisi akademis Vino Anggraini (NIM 112021255, Sistem Informasi, semester 10, 144 SKS, IPK 3.11, Lulus) dengan Ihsan Mariana (NIM 112021282, Sistem Informasi, semester 10, 124 SKS, IPK 3.03, Aktif). Apa perbedaan utama kondisi keduanya?",
+      "AiResponse": " Perbedaan utama antara Vino Anggraini dan Ihsan Mariana adalah dalam hal kondisi akademis, Vino Anggraini telah lulus dengan mencapai semester 10 dan memiliki IPK 3.11, sedangkan Ihsan Mariana masih aktif dengan mencapai semester 10 tetapi memiliki SKS yang lebih kecil (124 SKS) dan IPK yang rendah (3.03).",
+      "answer": "Perbedaan utama keduanya adalah Vino Anggraini sudah berstatus Lulus dengan 144 SKS meskipun IPK-nya hanya 3.11, yang berarti seluruh kewajiban akademisnya sudah terpenuhi. Sebaliknya, Ihsan Mariana yang memiliki IPK serupa 3.03 masih berstatus Aktif dengan 124 SKS, sehingga masih perlu menambah minimal 24 SKS dan menyelesaikan kewajiban lainnya sebelum bisa dinyatakan lulus.",
+      "score": {
+        "rouge1": {
+          "precision": 0.4545,
+          "recall": 0.5102,
+          "fmeasure": 0.4808
+        },
+        "rouge2": {
+          "precision": 0.1852,
+          "recall": 0.2083,
+          "fmeasure": 0.1961
+        },
+        "rougeL": {
+          "precision": 0.3273,
+          "recall": 0.3673,
+          "fmeasure": 0.3462
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 38.456,
+        "load_duration_s": 0.032,
+        "prompt_eval_duration_s": 14.252,
+        "eval_duration_s": 24.042,
+        "prompt_token_count": 1379,
+        "output_token_count": 175,
+        "tokens_per_second": 7.28,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:08:17.040069",
+      "question": "Ervan Sanjaya adalah mahasiswa Bisnis Digital angkatan 2021 semester 10 yang berstatus Cuti dengan IPK 3.35 dan 127 SKS. Jika ia ingin mengajukan perpanjangan masa studi, syarat apa yang harus ia penuhi berdasarkan pedoman kampus?",
+      "AiResponse": "- Jika Ervan Sanjaya ingin mengajukan perpanjangan masa studi, dia harus menandatangani surat pernyataan bermaterai yang isinya apabila dia tidak dapat menyelesaikan studinya dalam jangka waktu yang diberikan, dan secara otomatis dia akan rela mengundurkan diri.",
+      "answer": "Berdasarkan pedoman, Ervan Sanjaya hanya bisa mendapat perpanjangan masa studi jika tinggal menyelesaikan Tugas Akhir/skripsi. Namun dengan 127 SKS, ia masih jauh dari kondisi tersebut karena belum memenuhi syarat minimum 148 SKS, sehingga pengajuan perpanjangan kemungkinan besar tidak akan dikabulkan.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2195,
+          "recall": 0.2571,
+          "fmeasure": 0.2368
+        },
+        "rouge2": {
+          "precision": 0.075,
+          "recall": 0.0882,
+          "fmeasure": 0.0811
+        },
+        "rougeL": {
+          "precision": 0.1707,
+          "recall": 0.2,
+          "fmeasure": 0.1842
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 36.301,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 13.598,
+        "eval_duration_s": 22.539,
+        "prompt_token_count": 1348,
+        "output_token_count": 157,
+        "tokens_per_second": 6.97,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:10:34.642253",
+      "question": "Gilang Saputra adalah mahasiswa Bisnis Digital angkatan 2022 yang kini berada di semester 8 dengan IPK 3.50 dan 130 SKS berstatus Aktif. Berdasarkan pedoman, evaluasi khusus apa yang akan ia hadapi di semester ini dan apa dampaknya?",
+      "AiResponse": "Gilang Saputra akan mengalami evaluasi akhir semester secara rutin di semester ini, dan hasil evaluasi tersebut akan digunakan untuk menentukan beban studi yang boleh diambil pada semester berikutnya. Namun, tidak ada hubungan yang disebutkan antara IPK 3.50 dan jumlah SKS yang dapat diambil dalam satu semester.",
+      "answer": "Di akhir semester 8, Gilang Saputra akan menghadapi evaluasi penentu hasil studi yang merupakan salah satu momen evaluasi khusus bagi mahasiswa S1. Hasil evaluasi ini akan menentukan batas SKS yang boleh diambil di semester berikutnya, dan jika performa akademisnya dinilai tidak memadai, kampus dapat mengambil langkah evaluasi lebih lanjut terkait kelanjutan studinya.",
+      "score": {
+        "rouge1": {
+          "precision": 0.4615,
+          "recall": 0.5106,
+          "fmeasure": 0.4848
+        },
+        "rouge2": {
+          "precision": 0.1961,
+          "recall": 0.2174,
+          "fmeasure": 0.2062
+        },
+        "rougeL": {
+          "precision": 0.2885,
+          "recall": 0.3191,
+          "fmeasure": 0.303
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 32.276,
+        "load_duration_s": 0.034,
+        "prompt_eval_duration_s": 13.269,
+        "eval_duration_s": 18.861,
+        "prompt_token_count": 1344,
+        "output_token_count": 142,
+        "tokens_per_second": 7.53,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:12:31.193902",
+      "question": "Jihan Khairunnisa (NIM 112022136) adalah mahasiswi Bisnis Digital angkatan 2022 semester 8 yang berstatus Lulus dengan 144 SKS dan IPK 3.90. Jika ia belum mengisi formulir bebas biaya secara online, ke mana ia harus pergi untuk mendapatkan formulir tersebut dan berapa lama prosesnya?",
+      "AiResponse": "- Jika Anda ingin mendapatkan formulir bebas biaya, Anda harus pergi ke Ruangan BAAK kampus B2. Prosesnya tidak ditentukan secara tertulis, namun biasanya prosesnya cepat.",
+      "answer": "Jika tidak mengisi secara online, Jihan Khairunnisa dapat mengambil formulir cetak Surat Keterangan Lunas Biaya Pendidikan langsung di ruangan BAAK Kampus B2. Setelah diisi dan diserahkan ke Bagian Keuangan atau dikirim via email ke keuangan@nurulfikri.ac.id, surat keterangan tersebut akan diterbitkan paling lambat dalam waktu 3 hari kerja.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2,
+          "recall": 0.4167,
+          "fmeasure": 0.2703
+        },
+        "rouge2": {
+          "precision": 0.0612,
+          "recall": 0.1304,
+          "fmeasure": 0.0833
+        },
+        "rougeL": {
+          "precision": 0.14,
+          "recall": 0.2917,
+          "fmeasure": 0.1892
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 35.564,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 13.519,
+        "eval_duration_s": 21.885,
+        "prompt_token_count": 1369,
+        "output_token_count": 164,
+        "tokens_per_second": 7.49,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-06T14:15:25.652204",
+      "question": "Winda Rahmawati adalah mahasiswi Teknik Informatika angkatan 2021 semester 10 yang berstatus Aktif dengan IPK 3.79 dan 136 SKS. Jika ia tidak mampu menyelesaikan studinya hingga semester 14, prosedur apa yang akan dijalankan kampus dan dokumen apa yang masih bisa ia minta?",
+      "AiResponse": "- Jika Winda Rahmawati tidak mampu menyelesaikan studinya hingga semester 14, maka ada dua alternatif yang dapat dilakukan: Diberi Perpanjangan Waktu Studi atau Tidak Ada Perpanjangan Waktu Studi. Jika meminta perpanjangan waktu studi, maka syarat yang harus dipenuhi adalah menandatangani surat pernyataan bermaterai dan tidak dapat menyelesaikan tugas akhir/skripsinya.",
+      "answer": "Jika Winda Rahmawati tidak berhasil menyelesaikan studi hingga batas 14 semester, Kaprodi akan mengajukan surat usulan pengunduran diri beserta riwayat studi kepada Ketua. Setelah SK Drop Out terbit, SK tersebut dikirimkan ke orang tua atau wali bersama transkrip nilai. Meski sudah di-DO, ia masih diperbolehkan mengajukan permohonan surat keterangan lainnya yang dianggap perlu kepada pihak kampus.",
+      "score": {
+        "rouge1": {
+          "precision": 0.2281,
+          "recall": 0.2653,
+          "fmeasure": 0.2453
+        },
+        "rouge2": {
+          "precision": 0.0536,
+          "recall": 0.0625,
+          "fmeasure": 0.0577
+        },
+        "rougeL": {
+          "precision": 0.1754,
+          "recall": 0.2041,
+          "fmeasure": 0.1887
+        }
+      },
+      "is_failed": false,
+      "metadata": {
+        "total_duration_s": 34.62,
+        "load_duration_s": 0.031,
+        "prompt_eval_duration_s": 13.494,
+        "eval_duration_s": 20.98,
+        "prompt_token_count": 1365,
+        "output_token_count": 158,
+        "tokens_per_second": 7.53,
+        "cold_start": false
+      }
     }
   ],
   "all_failed": [],
   "system_failed": [],
-  "total_batches_run": 3,
+  "total_batches_run": 9,
   "grand_avg": {
-    "rougeL_f1": 0.2342,
-    "rougeL_recall": 0.2838,
-    "avg_tps": 7.43,
-    "total_data": 21,
+    "rougeL_f1": 0.2087,
+    "rougeL_recall": 0.2673,
+    "avg_tps": 5.75,
+    "total_data": 61,
     "total_gagal": 0
   }
 }
