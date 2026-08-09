@@ -153,43 +153,31 @@
       },
       "avg_tps": 7.3,
       "cold_start_count": 0
+    },
+    {
+      "batch_index": 10,
+      "jumlah_data": 10,
+      "jumlah_gagal": 2,
+      "avg_recall": {
+        "rouge1": 0.1536,
+        "rouge2": 0.0901,
+        "rougeL": 0.1431
+      },
+      "avg_precision": {
+        "rouge1": 0.3019,
+        "rouge2": 0.2294,
+        "rougeL": 0.2873
+      },
+      "avg_f1": {
+        "rouge1": 0.185,
+        "rouge2": 0.1196,
+        "rougeL": 0.1732
+      },
+      "avg_tps": 6.98,
+      "cold_start_count": 0
     }
   ],
   "all_results": [
-    {
-      "timestamp": "2026-06-03T10:56:28.025440",
-      "question": "Berdasarkan pedoman kelulusan, apakah Sari Wulandari yang memiliki 140 SKS sudah bisa dinyatakan lulus dari program Sarjana?",
-      "AiResponse": "Tidak dapat menyelesaikan, karena tidak ada informasi yang mengenai sertifikat kompetensi dan persyaratan-persyaratan lain yang telah dipenuhi oleh Sari Wulandari.",
-      "answer": "Belum bisa. Meskipun Sari Wulandari sudah menempuh banyak SKS, syarat minimum beban studi untuk kelulusan program Sarjana adalah sekurang-kurangnya 148 SKS.",
-      "score": {
-        "rouge1": {
-          "precision": 0.0909,
-          "recall": 0.0952,
-          "fmeasure": 0.093
-        },
-        "rouge2": {
-          "precision": 0.0476,
-          "recall": 0.05,
-          "fmeasure": 0.0488
-        },
-        "rougeL": {
-          "precision": 0.0909,
-          "recall": 0.0952,
-          "fmeasure": 0.093
-        }
-      },
-      "is_failed": false,
-      "metadata": {
-        "total_duration_s": 35.037,
-        "load_duration_s": 0.048,
-        "prompt_eval_duration_s": 11.664,
-        "eval_duration_s": 23.181,
-        "prompt_token_count": 1300,
-        "output_token_count": 175,
-        "tokens_per_second": 7.55,
-        "cold_start": false
-      }
-    },
     {
       "timestamp": "2026-06-03T12:35:39.850061",
       "question": "Berdasarkan pedoman kelulusan, apakah Sari Wulandari yang memiliki 140 SKS sudah bisa dinyatakan lulus dari program Sarjana?",
@@ -2231,14 +2219,83 @@
       }
     }
   ],
-  "all_failed": [],
+  "all_failed": [
+    {
+      "timestamp": "2026-06-10T13:03:15.399648",
+      "question": "Sebutkan salah satu tujuan dari penyusunan dan pelaksanaan Kode Etik Mahasiswa STT Terpadu Nurul Fikri!",
+      "AiResponse": " The goal of establishing and implementing the Code of Ethics for Students at STT-NF Nurul Fikri is to foster a culture of academic integrity, professionalism, and respect among students. This code aims to guide students in their behavior, actions, and decision-making processes during their time at the university, ensuring they uphold the values and principles that are essential for personal growth and success in their future careers.",
+      "answer": "Membentuk mahasiswa yang bertakwa, berilmu, dan berakhlak yang mulia.",
+      "score": {
+        "rouge1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rouge2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rougeL": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        }
+      },
+      "is_failed": true,
+      "metadata": {
+        "total_duration_s": 18.501,
+        "load_duration_s": 0.035,
+        "prompt_eval_duration_s": 6.319,
+        "eval_duration_s": 12.077,
+        "prompt_token_count": 732,
+        "output_token_count": 86,
+        "tokens_per_second": 7.12,
+        "cold_start": false
+      }
+    },
+    {
+      "timestamp": "2026-06-10T13:04:49.967501",
+      "question": "Bagaimana etika mahasiswa yang diatur dalam Pasal 10 terkait penampilan diri mereka sendiri?",
+      "AiResponse": "",
+      "answer": "Mahasiswa berpenampilan diri rapi dan sopan, sesuai dengan norma agama dan kemasyarakatan, antara lain tidak bertato, rambut tidak dicat warna-warni.",
+      "score": {
+        "rouge1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rouge2": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "fmeasure": 0.0
+        },
+        "rougeL": {
+          "precision": 0,
+          "recall": 0,
+          "fmeasure": 0
+        }
+      },
+      "is_failed": true,
+      "metadata": {
+        "total_duration_s": 14.854,
+        "load_duration_s": 0.033,
+        "prompt_eval_duration_s": 6.215,
+        "eval_duration_s": 8.561,
+        "prompt_token_count": 725,
+        "output_token_count": 57,
+        "tokens_per_second": 6.66,
+        "cold_start": false
+      }
+    }
+  ],
   "system_failed": [],
-  "total_batches_run": 9,
+  "total_batches_run": 10,
   "grand_avg": {
-    "rougeL_f1": 0.2087,
-    "rougeL_recall": 0.2673,
-    "avg_tps": 5.75,
-    "total_data": 61,
-    "total_gagal": 0
+    "rougeL_f1": 0.2564,
+    "rougeL_recall": 0.3186,
+    "avg_tps": 7.34,
+    "total_data": 71,
+    "total_gagal": 2
   }
 }
